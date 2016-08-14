@@ -347,7 +347,7 @@ function isNumberValid(inputNumber) {
             selectedCountry: selectedCountryGuess,
             highlightCountryIndex: selectedCountryGuessIndex,
             formattedNumber: formattedNumber
-        }
+        };
     },
     _fillDialCode() {
         // if the input is blank, insert dial code of the selected country
@@ -511,7 +511,7 @@ function isNumberValid(inputNumber) {
         });
 
         var inputFlagClasses = `flag ${this.state.selectedCountry.iso2}`;
-        var placeholder = this.props.placeholder || "";
+        var placeholder = this.props.placeholder || '';
 
         return (
             <div className={classNames('react-tel-input', this.props.classNames)}>
